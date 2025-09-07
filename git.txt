@@ -32,3 +32,12 @@ git rebase <branch>               # Reapply commits on top of another base tip
 git clean -f                      # Remove untracked files from the working directory
 git config --global user.name "Your Name"         # Set the global username for Git commits
 git config --global user.email "your.email@example.com"   # Set the global email for Git commits
+git reflog                         # Show a log of all reference updates (branch movements, resets, etc.)
+git shortlog                       # Summarize git log output by author
+git archive <branch> --format=zip --output=<file.zip>   # Create an archive of files from a branch
+git describe --tags                # Describe a commit using the most recent tag
+git bisect start                   # Begin a binary search to find the commit that introduced a bug
+git grep <pattern>                 # Search for a pattern in tracked files
+git submodule add <repo> <path>    # Add a submodule to the repository
+git submodule update --init        # Initialize and update submodules
+git commit -a -m "commit message"           # Commit all tracked changes directly with a message
