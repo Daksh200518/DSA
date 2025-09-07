@@ -1,6 +1,5 @@
 public class BST {
     public static void main(String[] args) {
-        int a;// useless
         BinarySearchTree bst = new BinarySearchTree();
         bst.insert(8);
         bst.insert(3);
