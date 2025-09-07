@@ -1,0 +1,34 @@
+git init                          # Initialize a new Git repository
+git clone <repository_url>        # Clone a repository into a new directory
+git status                        # Show the working tree status
+git add <file>                    # Add a file to the staging area
+git add .                         # Add all changes to the staging area
+git commit -m "commit message"    # Commit staged changes with a message
+git push                          # Push local commits to the remote repository
+git pull                          # Fetch and merge changes from the remote repository
+git fetch                         # Download objects and refs from another repository
+git branch                        # List, create, or delete branches
+git branch <branch_name>          # Create a new branch
+git checkout <branch_name>        # Switch to a branch
+git checkout -b <new_branch>      # Create and switch to a new branch
+git merge <branch_name>           # Merge a branch into the current branch
+git log                           # Show commit logs
+git diff                          # Show changes between commits, commit and working tree, etc.
+git stash                         # Stash the changes in a dirty working directory
+git stash pop                     # Apply the most recent stash and remove it from the stash list
+git remote -v                     # Show remote repository URLs
+git remote add <name> <url>       # Add a new remote repository
+git rm <file>                     # Remove a file from the working directory and staging area
+git mv <old> <new>                # Move or rename a file, directory, or symlink
+git reset                         # Reset current HEAD to the specified state
+git reset --hard                  # Reset the index and working tree; discard all changes
+git revert <commit>               # Create a new commit that undoes the changes from a previous commit
+git tag                           # List, create, or delete tags
+git tag <tag_name>                # Create a new tag
+git show <commit>                 # Show various types of objects (commits, tags, etc.)
+git blame <file>                  # Show what revision and author last modified each line of a file
+git cherry-pick <commit>          # Apply the changes from a specific commit
+git rebase <branch>               # Reapply commits on top of another base tip
+git clean -f                      # Remove untracked files from the working directory
+git config --global user.name "Your Name"         # Set the global username for Git commits
+git config --global user.email "your.email@example.com"   # Set the global email for Git commits
