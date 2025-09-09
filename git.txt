@@ -1,146 +1,45 @@
-git init
-    # Initialize a new Git repository in the current directory.
-
-git clone <repository_url>
-    # Clone a repository from a remote URL.
-
-git status
-    # Show the working tree status.
-
-git add <file>
-    # Add a specific file to the staging area.
-
-git add .
-    # Add all changes in the current directory to the staging area.
-
-git commit -m "<commit_message>"
-    # Commit staged changes with a message.
-
-git push
-    # Push local commits to the remote repository.
-
-git pull
-    # Fetch and merge changes from the remote repository.
-
-git fetch
-    # Download objects and refs from another repository.
-
-git branch
-    # List all local branches.
-
-git branch <branch_name>
-    # Create a new branch.
-
-git branch -d <branch_name>
-    # Delete a branch.
-
-git checkout <branch_name>
-    # Switch to an existing branch.
-
-git checkout -b <new_branch>
-    # Create and switch to a new branch.
-
-git log
-    # Show commit logs.
-
-git log --oneline
-    # Show commit logs in a compact form.
-
-git stash
-    # Stash the changes in a dirty working directory.
-
-git stash list
-    # List all stashed changes.
-
-git stash apply [<stash>]
-    # Apply a stash without removing it from the stash list.
-
-git stash pop
-    # Apply the most recent stash and remove it from the stash list.
-
-git stash
-    # Stash the changes in a dirty working directory.
-
-git stash pop
-    # Apply the most recent stash and remove it from the stash list.
-
-git remote -v
-    # Show remote connections.
-
-git remote add <name> <url>
-    # Add a new remote repository.
-
-git rm <file>
-    # Remove a file from the working directory and staging area.
-
-git rm --cached <file>
-    # Remove a file from the staging area but keep it in the working directory.
-
-git mv <old> <new>
-    # Move or rename a file, directory, or symlink.
-
-git reset [<commit>]
-    # Reset current HEAD to the specified commit.
-
-git reset --hard [<commit>]
-    # Reset the index and working tree to the specified commit.
-
-git revert <commit>
-    # Create a new commit that undoes the changes from a previous commit.
-
-git tag
-    # List all tags.
-
-git tag <tag_name>
-    # Create a new tag.
-
-git show <commit>
-    # Show various types of objects (commits, tags, etc.).
-
-git blame <file>
-    # Show what revision and author last modified each line of a file.
-
-git cherry-pick <commit>
-    # Apply the changes introduced by some existing commits.
-
-git rebase <branch>
-    # Reapply commits on top of another base tip.
-
-git clean -f
-    # Remove untracked files from the working directory.
-
-git config --global user.name "<Your Name>"
-    # Set the global Git username.
-
-git config --global user.email "<your.email@example.com>"
-    # Set the global Git email.
-
-git reflog
-    # Show the history of HEAD and branch references.
-
-git shortlog
-    # Summarize git log output.
-
-git archive <branch> --format=zip --output=<file.zip>
-    # Create an archive of files from a branch.
-
-git describe --tags
-    # Describe a commit using the most recent tag reachable from it.
-
-git bisect start
-    # Start a binary search to find the commit that introduced a bug.
-
-git grep <pattern>
-    # Search for a pattern in tracked files.
-
-git submodule add <repo> <path>
-    # Add a new submodule.
-
-git submodule update --init
-    # Initialize and update submodules.
-
-git commit -a -m "<commit_message>"
-    # Commit all tracked, modified files with a message.
-
-# Description:
-# This file contains common Git commands with brief explanations. Use these commands to manage repositories, branches, commits, remotes, and more in Git version control.
+  Some Git commands
+git init                          # Initialize a new Git repository
+git clone <repository_url>        # Clone a repository into a new directory
+git status                        # Show the working tree status
+git add <file>                    # Add a file to the staging area
+git add .                         # Add all changes to the staging area
+git commit -m "commit message"    # Commit staged changes with a message
+git push                          # Push local commits to the remote repository
+git pull                          # Fetch and merge changes from the remote repository
+git fetch                         # Download objects and refs from another repository
+git branch                        # List, create, or delete branches
+git branch <branch_name>          # Create a new branch
+git checkout <branch_name>        # Switch to a branch
+git checkout -b <new_branch>      # Create and switch to a new branch
+git merge <branch_name>           # Merge a branch into the current branch
+git log                           # Show commit logs
+git diff                          # Show changes between commits, commit and working tree, etc.
+git stash                         # Stash the changes in a dirty working directory
+git stash pop                     # Apply the most recent stash and remove it from the stash list
+git remote -v                     # Show remote repository URLs
+git remote add <name> <url>       # Add a new remote repository
+git rm <file>                     # Remove a file from the working directory and staging area
+git rm --cached                   #  Remove a file from the staging area
+git mv <old> <new>                # Move or rename a file, directory, or symlink
+git reset                         # Reset current HEAD to the specified state
+git reset --hard                  # Reset the index and working tree; discard all changes
+git revert <commit>               # Create a new commit that undoes the changes from a previous commit
+git tag                           # List, create, or delete tags
+git tag <tag_name>                # Create a new tag
+git show <commit>                 # Show various types of objects (commits, tags, etc.)
+git blame <file>                  # Show what revision and author last modified each line of a file
+git cherry-pick <commit>          # Apply the changes from a specific commit
+git rebase <branch>               # Reapply commits on top of another base tip
+git clean -f                      # Remove untracked files from the working directory
+git config --global user.name "Your Name"         # Set the global username for Git commits
+git config --global user.email "your.email@example.com"   # Set the global email for Git commits
+git reflog                         # Show a log of all reference updates (branch movements, resets, etc.)
+git shortlog                       # Summarize git log output by author
+git archive <branch> --format=zip --output=<file.zip>   # Create an archive of files from a branch
+git describe --tags                # Describe a commit using the most recent tag
+git bisect start                   # Begin a binary search to find the commit that introduced a bug
+git grep <pattern>                 # Search for a pattern in tracked files
+git submodule add <repo> <path>    # Add a submodule to the repository
+git submodule update --init        # Initialize and update submodules
+git commit -a -m "commit message"           # Commit all tracked changes directly with a message
