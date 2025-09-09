@@ -19,7 +19,7 @@ git stash pop                     # Apply the most recent stash and remove it fr
 git remote -v                     # Show remote repository URLs
 git remote add <name> <url>       # Add a new remote repository
 git rm <file>                     # Remove a file from the working directory and staging area
-git rm --cached                   # Remove a file from the staging area
+git rm --cached                   #  Remove a file from the staging area
 git mv <old> <new>                # Move or rename a file, directory, or symlink
 git reset                         # Reset current HEAD to the specified state
 git reset --hard                  # Reset the index and working tree; discard all changes
